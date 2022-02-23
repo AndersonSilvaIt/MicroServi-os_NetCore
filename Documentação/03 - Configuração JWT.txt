@@ -1,0 +1,20 @@
+Para informar que a API irá trabalhar com o JWT, é preciso configurar o middleware informando que esse será o padrão
+
+dentro de Startup
+			services.AddAuthentication(options => {
+				options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+				options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+			}).AddJwtBearer(bearerOptions => {
+
+				bearerOptions.RequireHttpsMetadata = true;
+				bearerOptions.SaveToken = true;
+				bearerOptions.TokenValidationParameters = new TokenValidationParameters {
+
+					ValidateIssuerSigningKey = true,
+					IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("x")),
+					ValidateIssuer = true,
+					ValidateAudience = true,
+					ValidAudience = "x",
+					ValidIssuer = "x"
+				};
+			});
