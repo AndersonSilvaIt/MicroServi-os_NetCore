@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{880C51FE-5EC9-4407-9A86-2AF7D249A7BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{8BCBA616-5199-485F-B2A8-5333C50BF61C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "building blocks", "building blocks", "{D0E4C465-E3F0-4120-9533-FB4D0C9CEBB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{AC08629B-1D9A-4BEB-B9E1-FFF4FA8A46A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSE.Identidade.API", "src\services\NSE.Identidade.API\NSE.Identidade.API.csproj", "{C45C0502-C33F-4D55-8257-03CE6B17FFCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C45C0502-C33F-4D55-8257-03CE6B17FFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45C0502-C33F-4D55-8257-03CE6B17FFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45C0502-C33F-4D55-8257-03CE6B17FFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45C0502-C33F-4D55-8257-03CE6B17FFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BCBA616-5199-485F-B2A8-5333C50BF61C} = {880C51FE-5EC9-4407-9A86-2AF7D249A7BC}
+		{D0E4C465-E3F0-4120-9533-FB4D0C9CEBB8} = {880C51FE-5EC9-4407-9A86-2AF7D249A7BC}
+		{AC08629B-1D9A-4BEB-B9E1-FFF4FA8A46A6} = {880C51FE-5EC9-4407-9A86-2AF7D249A7BC}
+		{C45C0502-C33F-4D55-8257-03CE6B17FFCB} = {8BCBA616-5199-485F-B2A8-5333C50BF61C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42A14BB2-424D-4B87-BD38-5B970E07181B}
+	EndGlobalSection
+EndGlobal
