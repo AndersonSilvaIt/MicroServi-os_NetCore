@@ -1,0 +1,15 @@
+Pacotes necessários 
+
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3" />
+	<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.3" />
+	<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.3" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="3.1.3" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.3" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3" />
+	
+Criado a migration para iniciar (precisa setar o projeto de API como startup projetct) ..
+
+Add-Migration Inicial
+Update-database

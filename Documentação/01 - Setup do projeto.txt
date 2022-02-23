@@ -1,0 +1,5 @@
+Criado todas as APIS básicas do sistema e o projeto Web.
+
+Enable Docker - true
+Authentication - none
+
