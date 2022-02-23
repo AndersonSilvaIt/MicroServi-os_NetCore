@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using NSE.Identidade.API.Data;
 
 namespace NSE.Identidade.API {
@@ -24,12 +25,27 @@ namespace NSE.Identidade.API {
 				.AddRoles<IdentityRole>()
 				.AddEntityFrameworkStores<ApplicationDbContext>()
 				.AddDefaultTokenProviders();
-		
-			services.AddControllers();
 
+			services.AddSwaggerGen(c => {
+				c.SwaggerDoc("v1", new OpenApiInfo {
+
+					Title = "NerdStore Enterprise Identity API",
+					Description = "Esta API faz parte do curso de ASP.NET Core Enterprise Applications.",
+					Contact = new OpenApiContact() {  Name = "Anderson", Email = "anderson.silvait@outlook.com"},
+					License = new OpenApiLicense() {  Name = "MIT", Url = new System.Uri("https://opensource.org/licenses/MIT")}
+				}); 
+			});
+
+			services.AddControllers();
 		}
 		
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
+
+			app.UseSwagger();
+			app.UseSwaggerUI( c=> {
+				c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+			});
+			
 			if(env.IsDevelopment()) {
 				app.UseDeveloperExceptionPage();
 			}
