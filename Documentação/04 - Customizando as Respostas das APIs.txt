@@ -1,0 +1,17 @@
+Implementado a clase de retorno de mensagem. CustomResponse dentro da MainController.
+
+Implementado a clase para traduzir os erros do Identity.
+
+IdentityMensagensPortugues
+
+dentro de Startup é informado a classe que irá realizar a tradução.
+
+			services.AddDefaultIdentity<IdentityUser>()
+				.AddRoles<IdentityRole>()
+				.AddErrorDescriber<IdentityMensagensPortugues>()
+				.AddEntityFrameworkStores<ApplicationDbContext>()
+				.AddDefaultTokenProviders();
+				
+Relizado melhorias na classe Startup usando Extensions Methods.
+
+				

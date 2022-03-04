@@ -18,3 +18,6 @@ dentro de Startup
 					ValidIssuer = "x"
 				};
 			});
+
+Dentro da classe AuthController, é implementado a criação e o retorno do JWT.
+
