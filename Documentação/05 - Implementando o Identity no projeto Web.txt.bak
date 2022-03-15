@@ -19,7 +19,4 @@ Obs: o IdentityConfig precisa estar entre o código do Routing e o EndPoint ...
 			app.UseAddIdentityConfiguration();
 
 			app.UseEndpoints(endpoints => {
-
-
-Implementado a Controller de Identidade para realizar o Login e o Logout.
-Implementado as telas de login e logou (views)								
+								
